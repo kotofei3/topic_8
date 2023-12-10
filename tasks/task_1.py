@@ -3,5 +3,11 @@ data_types = [
     (13, -5), 3.5e10, 100.95, "abcdef",
     [21, 49], {"name": 'Micky', "age": 17}
 ]
+# for i in data_types:
+#     if type(i) != float and type(i) != str:
+#         print('Элемент:', i, type(i))
 
-# TODO: Пожалуйста, добавьте свой код ниже с комментариями и понятными названиями переменных.
+
+for i in data_types:
+    if not isinstance(i, (float, str)):
+        print('Элемент:', i, type(i))
